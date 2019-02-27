@@ -29,7 +29,7 @@
   height: 100%;
 }
 
-#page > .nav1 {
+#page > .article1 {
 
   background-color : #f5512f;
   @include flex_general;
@@ -37,21 +37,21 @@
   grid-area        : nav1;
 }
 
-#page > .nav2 {
+#page > .article2 {
   background-color : #cc492e;
   flex-direction   : column;
   @include flex_general;
   grid-area        : nav2;
 }
 
-#page > .nav3 {
+#page > .article3 {
   background-color : #c85037;
   flex-direction   : column;
   @include flex_general;
   grid-area        : nav3;
 }
 
-#page > .nav4 {
+#page > .article4 {
   background-color : #834b40;
   flex-direction   : column;
   @include flex_general;
