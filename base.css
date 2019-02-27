@@ -7,17 +7,18 @@
   grid-column-gap: 3px;
   grid-row-gap: 3px;
   grid-template-columns: 20% auto 40%;
-  grid-template-rows: 20% auto auto 20%;
+  grid-template-rows: 10% auto auto 10%;
   grid-template-areas: "head head head" "nav1 nav2 nav3" "main main nav4" "foot foot foot";
 }
 
 #page > header {
-  background-color: #8ca0ff;
   display: flex;
   align-items: center;
   justify-content: space-around;
   justify-content: center;
+  background-color: #393433;
   grid-area: head;
+  height: 100%;
 }
 
 #page > .nav1 {
