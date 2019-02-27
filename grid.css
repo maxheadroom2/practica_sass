@@ -1,0 +1,75 @@
+#page {
+  display               : grid;
+  width                 : 100vw;
+  height                : 100vh;
+  margin                : 5px;
+  padding               : 0;
+  grid-column-gap       : 3px;
+  grid-row-gap          : 3px;
+  grid-template-columns : 20% auto 40%;
+  grid-template-rows    : 20% auto auto 20%;
+  grid-template-areas   : "head head head"
+                          "nav1 nav2 nav3"
+                          "main main nav4"
+                          "foot foot foot";
+}
+
+#page > header {
+  display          : flex;
+  background-color : #8ca0ff;
+  align-items      : center;
+  justify-content  : space-around;
+  grid-area        : head;
+}
+
+#page > .nav1 {
+  display          : flex;
+  background-color : #f5512f;
+  align-items      : center;
+  flex-direction   : column;
+  justify-content  : center;
+  grid-area        : nav1;
+}
+
+#page > .nav2 {
+  display          : flex;
+  background-color : #cc492e;
+  align-items      : center;
+  flex-direction   : column;
+  justify-content  : center;
+  grid-area        : nav2;
+}
+
+#page > .nav3 {
+  display          : flex;
+  background-color : #c85037;
+  align-items      : center;
+  flex-direction   : column;
+  justify-content  : center;
+  grid-area        : nav3;
+}
+
+#page > .nav4 {
+  display          : flex;
+  background-color : #834b40;
+  align-items      : center;
+  flex-direction   : column;
+  justify-content  : center;
+  grid-area        : nav4;
+}
+
+#page > main {
+  display          : flex;
+  background-color : #ffff64;
+  align-items      : center;
+  justify-content  : space-around;
+  grid-area        : main;
+}
+
+#page > footer {
+  display          : flex;
+  background-color : #8cffa0;
+  align-items      : center;
+  justify-content  : space-around;
+  grid-area        : foot;
+}
