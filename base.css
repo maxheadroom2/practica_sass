@@ -4,10 +4,10 @@
   height: 100vh;
   margin: 5px;
   padding: 0;
-  grid-column-gap: 3px;
-  grid-row-gap: 3px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   grid-template-columns: 20% auto 40%;
-  grid-template-rows: 10% auto auto 10%;
+  grid-template-rows: 10% auto auto auto;
   grid-template-areas: "head head head" "nav1 nav2 nav3" "main main nav4" "foot foot foot";
 }
 
@@ -16,9 +16,7 @@
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  background-color: #393433;
   grid-area: head;
-  height: 100%;
 }
 
 #page > .article1 {
@@ -32,7 +30,7 @@
 }
 
 #page > .article2 {
-  background-color: #cc492e;
+  background-color: #fafafa;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -61,7 +59,7 @@
   grid-area: nav4;
 }
 
-#page > main {
+#page > .main {
   background-color: #ffff64;
   display: flex;
   align-items: center;
@@ -71,7 +69,6 @@
 }
 
 #page > footer {
-  background-color: #8cffa0;
   display: flex;
   align-items: center;
   justify-content: space-around;
