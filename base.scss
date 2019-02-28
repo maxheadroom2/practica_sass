@@ -66,6 +66,10 @@
   grid-area        : foot;
 }
 
+.collection a.collection-item {
+    color: #1a1a1a !important;
+
+}
 @media only screen and (max-width: 600px) {
 
   #page {
@@ -141,5 +145,9 @@
     grid-area        : foot;
   }
 
+  .collection a.collection-item {
+      color: #1a1a1a !important;
+
+  }
 
 }
