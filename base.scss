@@ -30,9 +30,6 @@
 }
 
 #page > .article1 {
-  background-color : #f5512f;
-  @include flex_general;
-  flex-direction   : column;
   grid-area        : nav1;
 }
 
@@ -87,8 +84,7 @@
                             "nav3"
                             "nav4"
                             "main"
-                            "foot"
-                            "footcp";
+                            "foot";
   }
 
 
@@ -107,9 +103,8 @@
   }
 
   #page > .article1 {
-    background-color : #f5512f;
-    @include flex_general;
-    flex-direction   : column;
+    min-height: 160px;
+    overflow: auto;
     grid-area        : nav1;
   }
 
@@ -128,8 +123,8 @@
   }
 
   #page > .article4 {
-    background-color : #834b40;
-    flex-direction   : column;
+
+
     @include flex_general;
     grid-area        : nav4;
   }
@@ -146,9 +141,5 @@
     grid-area        : foot;
   }
 
-  #page > #footer-copyright {
-    @include flex_general;
-    grid-area        : footcp;
-  }
 
 }

@@ -8,26 +8,19 @@
   grid-row-gap: 0px;
   grid-template-columns: 20% auto 40%;
   grid-template-rows: 10% auto auto auto;
-  grid-template-areas: "head head head" "nav1 nav2 nav3" "main main nav4" "foot foot foot";
-}
+  grid-template-areas: "head head head" "nav1 nav2 nav3" "main main nav4" "foot foot foot"; }
 
 #page > header {
   display: flex;
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  grid-area: head;
-}
+  grid-area: head; }
 
 #page > .article1 {
-  background-color: #f5512f;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  justify-content: center;
-  flex-direction: column;
-  grid-area: nav1;
-}
+  overflow: scroll;
+  min-height: 90px;
+  grid-area: nav1; }
 
 #page > .article2 {
   background-color: #fafafa;
@@ -36,8 +29,7 @@
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  grid-area: nav2;
-}
+  grid-area: nav2; }
 
 #page > .article3 {
   background-color: #c85037;
@@ -46,8 +38,7 @@
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  grid-area: nav3;
-}
+  grid-area: nav3; }
 
 #page > .article4 {
   background-color: #834b40;
@@ -56,8 +47,7 @@
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  grid-area: nav4;
-}
+  grid-area: nav4; }
 
 #page > .main {
   background-color: #ffff64;
@@ -65,16 +55,14 @@
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  grid-area: main;
-}
+  grid-area: main; }
 
 #page > footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  grid-area: foot;
-}
+  grid-area: foot; }
 
 @media only screen and (max-width: 600px) {
   #page {
@@ -86,27 +74,20 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    grid-template-areas: "head" "nav1" "nav2" "nav3" "nav4" "main" "foot" "footcp";
-  }
+    grid-template-rows: auto auto  auto auto auto auto auto;
+    grid-template-areas: "head" "nav1" "nav2" "nav3" "nav4" "main" "foot"; }
 
   #page > header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: head;
-  }
+    grid-area: head; }
 
   #page > .article1 {
-    background-color: #f5512f;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    justify-content: center;
-    flex-direction: column;
-    grid-area: nav1;
-  }
+    min-height: 160px;
+    overflow: auto;
+    grid-area: nav1; }
 
   #page > .article2 {
     background-color: #fafafa;
@@ -115,8 +96,7 @@
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: nav2;
-  }
+    grid-area: nav2; }
 
   #page > .article3 {
     background-color: #c85037;
@@ -125,18 +105,14 @@
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: nav3;
-  }
+    grid-area: nav3; }
 
   #page > .article4 {
-    background-color: #834b40;
-    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: nav4;
-  }
+    grid-area: nav4; }
 
   #page > .main {
     background-color: #ffff64;
@@ -144,24 +120,13 @@
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: main;
-  }
+    grid-area: main; }
 
   #page > footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: foot;
-  }
-
-  #page > #footer-copyright {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    justify-content: center;
-    grid-area: footcp;
-  }
-}
+    grid-area: foot; } }
 
 /*# sourceMappingURL=base.css.map */
