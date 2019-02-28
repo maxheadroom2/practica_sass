@@ -6,12 +6,12 @@
   padding               : 0;
   grid-column-gap       : 0px;
   grid-row-gap          : 0px;
-  grid-template-columns : 20% auto 40%;
+  grid-template-columns : 2.5% 20% auto 40% 2.5%;
   grid-template-rows    : 10% auto auto auto;
-  grid-template-areas   : "head head head"
-                          "nav1 nav2 nav3"
-                          "main main nav4"
-                          "foot foot foot";
+  grid-template-areas   : "x1 head head head x2"
+                          "x1 nav1 nav2 nav3 x2"
+                          "x1 main main nav4 x2"
+                          "x1 foot foot foot x2";
 }
 
 
@@ -27,10 +27,11 @@
   @include flex_general;
   // background-color : #393433;
   grid-area        : head;
-}
+  }
 
 #page > .article1 {
   grid-area        : nav1;
+  overflow: auto;
 }
 
 #page > .article2 {
@@ -55,10 +56,8 @@
 }
 
 #page > .main {
-
-  background-color : #ffff64;
-  @include flex_general;
   grid-area        : main;
+  overflow: auto;
 }
 
 #page > footer {
@@ -66,10 +65,22 @@
   grid-area        : foot;
 }
 
+#page > .x1 {
+    grid-area        : x1;
+}
+
+#page > .x2 {
+    grid-area        : x2;
+}
+
 .collection a.collection-item {
     color: #1a1a1a !important;
-
 }
+
+a.brand-logo {
+  padding-left: 10px;
+}
+
 @media only screen and (max-width: 600px) {
 
   #page {
@@ -81,7 +92,7 @@
     grid-column-gap       : 0px;
     grid-row-gap          : 0px;
     grid-template-columns : auto;
-    grid-template-rows    : auto auto  auto auto auto auto auto;
+    grid-template-rows    : auto auto auto auto auto auto auto;
     grid-template-areas   : "head"
                             "nav1"
                             "nav2"
@@ -104,6 +115,7 @@
     @include flex_general;
     // background-color : #393433;
     grid-area        : head;
+
   }
 
   #page > .article1 {
@@ -134,9 +146,7 @@
   }
 
   #page > .main {
-
-    background-color : #ffff64;
-    @include flex_general;
+  overflow: auto;
     grid-area        : main;
   }
 
