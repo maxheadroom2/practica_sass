@@ -1,3 +1,15 @@
+.collection a.collection-item {
+  color: #1a1a1a !important;
+}
+
+.collapsible.popout > li {
+  margin: 0;
+}
+
+a.brand-logo {
+  padding-left: 10px;
+}
+
 #page {
   display: grid;
   width: 100vw;
@@ -20,43 +32,43 @@
 }
 
 #page > .article1 {
-  grid-area: nav1;
   overflow: auto;
+  grid-area: nav1;
 }
 
 #page > .article2 {
-  background-color: #fafafa;
-  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: space-around;
   justify-content: center;
+  background-color: #fafafa;
+  flex-direction: column;
   grid-area: nav2;
 }
 
 #page > .article3 {
-  background-color: #c85037;
-  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: space-around;
   justify-content: center;
+  background-color: #c85037;
+  flex-direction: column;
   grid-area: nav3;
 }
 
 #page > .article4 {
-  background-color: #834b40;
-  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: space-around;
   justify-content: center;
+  background-color: #834b40;
+  flex-direction: column;
   grid-area: nav4;
 }
 
 #page > .main {
-  grid-area: main;
   overflow: auto;
+  grid-area: main;
 }
 
 #page > footer {
@@ -75,19 +87,19 @@
   grid-area: x2;
 }
 
-.collection a.collection-item {
-  color: #1a1a1a !important;
-}
-
-.collapsible.popout > li {
-  margin: 0;
-}
-
-a.brand-logo {
-  padding-left: 10px;
-}
-
 @media only screen and (max-width: 600px) {
+  .collection a.collection-item {
+    color: #1a1a1a !important;
+  }
+
+  .collapsible.popout > li {
+    margin: 0;
+  }
+
+  a.brand-logo {
+    padding-left: 10px;
+  }
+
   #page {
     display: grid;
     width: 100vw;
@@ -116,22 +128,22 @@ a.brand-logo {
   }
 
   #page > .article2 {
-    background-color: #fafafa;
-    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: space-around;
     justify-content: center;
+    background-color: #fafafa;
+    flex-direction: column;
     grid-area: nav2;
   }
 
   #page > .article3 {
-    background-color: #c85037;
-    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: space-around;
     justify-content: center;
+    background-color: #c85037;
+    flex-direction: column;
     grid-area: nav3;
   }
 
@@ -154,18 +166,6 @@ a.brand-logo {
     justify-content: space-around;
     justify-content: center;
     grid-area: foot;
-  }
-
-  .collection a.collection-item {
-    color: #1a1a1a !important;
-  }
-
-  .collapsible.popout > li {
-    margin: 0;
-  }
-
-  a.brand-logo {
-    padding-left: 10px;
   }
 }
 

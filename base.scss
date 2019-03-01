@@ -1,3 +1,12 @@
+@import "parcial";
+
+@mixin flex_general {
+  display         : flex;
+  align-items     : center;
+  justify-content : space-around;
+  justify-content : center;
+}
+
 #page {
   display               : grid;
   width                 : 100vw;
@@ -14,68 +23,70 @@
                           "x1 foot foot foot x2";
 }
 
-
 // Variables generales
-@mixin flex_general {
-  display          : flex;
-  align-items      : center;
-  justify-content  : space-around;
-  justify-content  : center;
-}
 
 #page > header {
-  @include flex_general;
+  @include    flex_general;
+  grid-area : head;
   // background-color : #393433;
-  grid-area        : head;
-  }
+}
 
 #page > .article1 {
-  grid-area        : nav1;
-  overflow: auto;
+  overflow  : auto;
+  grid-area : nav1;
 }
 
 #page > .article2 {
+  @include           flex_general;
   background-color : #fafafa;
   flex-direction   : column;
-  @include flex_general;
   grid-area        : nav2;
 }
 
 #page > .article3 {
+  @include           flex_general;
   background-color : #c85037;
   flex-direction   : column;
-  @include flex_general;
   grid-area        : nav3;
 }
 
 #page > .article4 {
+  @include           flex_general;
   background-color : #834b40;
   flex-direction   : column;
-  @include flex_general;
   grid-area        : nav4;
 }
 
 #page > .main {
-  grid-area        : main;
-  overflow: auto;
+  overflow  : auto;
+  grid-area : main;
 }
 
 #page > footer {
-  @include flex_general;
-  grid-area        : foot;
+  @include    flex_general;
+  grid-area : foot;
 }
 
 #page > .x1 {
-    grid-area        : x1;
+  grid-area : x1;
 }
 
 #page > .x2 {
-    grid-area        : x2;
+  grid-area : x2;
 }
 
-@import 'parcial';
+// usando el import de otro documento _parcial.scss
 
-@media only screen and (max-width: 600px) {
+@media
+  only screen
+  and (max-width : 600px) {
+  @import "parcial";
+    @mixin flex_general {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-around;
+    justify-content : center;
+  }
 
   #page {
     display               : grid;
@@ -95,57 +106,47 @@
                             "main"
                             "foot";
   }
-
-
   // Variables generales
-  @mixin flex_general {
-    display          : flex;
-    align-items      : center;
-    justify-content  : space-around;
-    justify-content  : center;
-  }
 
   #page > header {
-    @include flex_general;
+    @include    flex_general;
+    grid-area : head;
     // background-color : #393433;
-    grid-area        : head;
-
   }
 
   #page > .article1 {
-    min-height: 160px;
-    overflow: auto;
-    grid-area        : nav1;
+    min-height : 160px;
+    overflow   : auto;
+    grid-area  : nav1;
   }
 
   #page > .article2 {
+    @include           flex_general;
     background-color : #fafafa;
     flex-direction   : column;
-    @include flex_general;
     grid-area        : nav2;
   }
 
   #page > .article3 {
+    @include           flex_general;
     background-color : #c85037;
     flex-direction   : column;
-    @include flex_general;
     grid-area        : nav3;
   }
 
   #page > .article4 {
-    @include flex_general;
-    grid-area        : nav4;
+    @include    flex_general;
+    grid-area : nav4;
   }
 
   #page > .main {
-  overflow: auto;
-  grid-area        : main;
+    overflow  : auto;
+    grid-area : main;
   }
 
   #page > footer {
-    @include flex_general;
-    grid-area        : foot;
+    @include    flex_general;
+    grid-area : foot;
   }
-
-  @import 'parcial';
+  // usando el import de otro documento _parcial.scss
 }
