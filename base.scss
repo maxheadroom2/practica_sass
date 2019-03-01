@@ -73,13 +73,7 @@
     grid-area        : x2;
 }
 
-.collection a.collection-item {
-    color: #1a1a1a !important;
-}
-
-a.brand-logo {
-  padding-left: 10px;
-}
+@import 'parcial';
 
 @media only screen and (max-width: 600px) {
 
@@ -139,15 +133,13 @@ a.brand-logo {
   }
 
   #page > .article4 {
-
-
     @include flex_general;
     grid-area        : nav4;
   }
 
   #page > .main {
   overflow: auto;
-    grid-area        : main;
+  grid-area        : main;
   }
 
   #page > footer {
@@ -155,9 +147,5 @@ a.brand-logo {
     grid-area        : foot;
   }
 
-  .collection a.collection-item {
-      color: #1a1a1a !important;
-
-  }
-
+  @import 'parcial';
 }

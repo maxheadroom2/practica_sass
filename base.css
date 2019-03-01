@@ -79,6 +79,10 @@
   color: #1a1a1a !important;
 }
 
+.collapsible.popout > li {
+  margin: 0;
+}
+
 a.brand-logo {
   padding-left: 10px;
 }
@@ -154,6 +158,14 @@ a.brand-logo {
 
   .collection a.collection-item {
     color: #1a1a1a !important;
+  }
+
+  .collapsible.popout > li {
+    margin: 0;
+  }
+
+  a.brand-logo {
+    padding-left: 10px;
   }
 }
 
