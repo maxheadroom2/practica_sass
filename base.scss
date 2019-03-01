@@ -1,6 +1,7 @@
 @import "parcial";
 
 @mixin flex_general {
+  transition-duration:.5s;
   display         : flex;
   align-items     : center;
   justify-content : space-around;
@@ -86,9 +87,11 @@
     align-items     : center;
     justify-content : space-around;
     justify-content : center;
+    transition-duration:.5s;
   }
 
   #page {
+    transition-duration:.5s;
     display               : grid;
     width                 : 100vw;
     height                : 100vh;
