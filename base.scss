@@ -1,12 +1,5 @@
 @import "parcial";
 
-@mixin flex_general {
-  transition-duration:.5s;
-  display         : flex;
-  align-items     : center;
-  justify-content : space-around;
-  justify-content : center;
-}
 
 #page {
   display               : grid;
@@ -82,16 +75,8 @@
   only screen
   and (max-width : 600px) {
   @import "parcial";
-    @mixin flex_general {
-    display         : flex;
-    align-items     : center;
-    justify-content : space-around;
-    justify-content : center;
-    transition-duration:.5s;
-  }
 
   #page {
-    transition-duration:.5s;
     display               : grid;
     width                 : 100vw;
     height                : 100vh;
@@ -108,6 +93,7 @@
                             "nav4"
                             "main"
                             "foot";
+    transition-duration   : .5s;
   }
   // Variables generales
 

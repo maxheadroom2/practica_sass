@@ -11,3 +11,19 @@
 a.brand-logo {
   padding-left: 10px;
 }
+
+@mixin flex_general {
+display             : flex;
+align-items         : center;
+justify-content     : space-around;
+justify-content     : center;
+}
+
+// animacion de cambios en responsive
+*{
+    -webkit-transition:all 1s ease;
+         -moz-transition:all 1s ease;
+               -o-transition:all 1s ease;
+                     transition:all 1s ease;
+                     -ms-transition:all 1s ease;
+}

@@ -10,6 +10,13 @@ a.brand-logo {
   padding-left: 10px;
 }
 
+* {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 #page {
   display: grid;
   width: 100vw;
@@ -24,7 +31,6 @@ a.brand-logo {
 }
 
 #page > header {
-  transition-duration: 0.5s;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -38,7 +44,6 @@ a.brand-logo {
 }
 
 #page > .article2 {
-  transition-duration: 0.5s;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -49,7 +54,6 @@ a.brand-logo {
 }
 
 #page > .article3 {
-  transition-duration: 0.5s;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -60,7 +64,6 @@ a.brand-logo {
 }
 
 #page > .article4 {
-  transition-duration: 0.5s;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -76,7 +79,6 @@ a.brand-logo {
 }
 
 #page > footer {
-  transition-duration: 0.5s;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -105,8 +107,14 @@ a.brand-logo {
     padding-left: 10px;
   }
 
+  * {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
   #page {
-    transition-duration: 0.5s;
     display: grid;
     width: 100vw;
     height: 100vh;
@@ -117,6 +125,7 @@ a.brand-logo {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto 30% auto;
     grid-template-areas: "head" "nav1" "nav2" "nav3" "nav4" "main" "foot";
+    transition-duration: 0.5s;
   }
 
   #page > header {
@@ -124,7 +133,6 @@ a.brand-logo {
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    transition-duration: 0.5s;
     grid-area: head;
   }
 
@@ -139,7 +147,6 @@ a.brand-logo {
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    transition-duration: 0.5s;
     background-color: #fafafa;
     flex-direction: column;
     grid-area: nav2;
@@ -150,7 +157,6 @@ a.brand-logo {
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    transition-duration: 0.5s;
     background-color: #c85037;
     flex-direction: column;
     grid-area: nav3;
@@ -161,7 +167,6 @@ a.brand-logo {
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    transition-duration: 0.5s;
     grid-area: nav4;
   }
 
@@ -175,7 +180,6 @@ a.brand-logo {
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    transition-duration: 0.5s;
     grid-area: foot;
   }
 }
