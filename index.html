@@ -61,14 +61,27 @@
       </div>
     </div>
 
-    <div class="article4 card grey lighten-5">
-      <div class="card-content darken-4-text">
-        <span class="card-title">Titulo</span>
-        <p>parrafo</p>
-      </div>
-      <div class="card-action">
-        <a href="#" class="blue-text">Enlances</a>
-      </div>
+    <div class="article4 card grey lighten-5 row">
+      <ul class="collapsible col s12">
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">filter_drama</i>
+            First
+            <span class="new badge">4</span></div>
+          <div class="collapsible-body">
+            <p class="flow-text" >Lorem ipsum dolor sit amet.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">place</i>
+            Second
+            <span class="badge">1</span></div>
+          <div class="collapsible-body">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </li>
+      </ul>
     </div>
 
     <div class="x1"></div>
@@ -91,52 +104,49 @@
         <div class="col s6">
           <p class="center">Equipo Visitante</p>
 
-            <ul class="collection">
-              <li class="collection-item avatar">
-                <img src="iconos/personalizados/guadalajara.png" alt="" class="circle">
-                <span class="title">Club Guadalajara</span>
-                <p><br>
-                  Ultimos juegos Ganados 5/8
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-              <li class="collection-item avatar">
-                <i class="material-icons circle">folder</i>
-                <span class="title">Title</span>
-                <p>First Line <br>
-                  Second Line
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-              <li class="collection-item avatar">
-                <i class="material-icons circle green">insert_chart</i>
-                <span class="title">Title</span>
-                <p>First Line <br>
-                  Second Line
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-              <li class="collection-item avatar">
-                <i class="material-icons circle red">play_arrow</i>
-                <span class="title">Title</span>
-                <p>First Line <br>
-                  Second Line
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-            </ul>
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <img src="iconos/personalizados/guadalajara.png" alt="" class="circle">
+              <span class="title">Club Guadalajara</span>
+              <p><br>
+                Ultimos juegos Ganados 5/8
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle">folder</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle green">insert_chart</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle red">play_arrow</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+          </ul>
 
 
         </div>
         <div class="col s6">
           <p class="center">Equipo Local</p>
           <ul class="collection">
-            <li class="collection-item avatar">
-              <img src="images/yuna.jpg" alt="" class="circle">
-              <span class="title">Title</span>
-              <p>First Line <br>
-                Second Line
-              </p>
+            <li class="collection-item collapsible-header avatar">
+              <img src="iconos/personalizados/america.png" alt="" class="circle">
+              <span class="title">Club America</span>
               <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
             </li>
             <li class="collection-item avatar">
@@ -199,6 +209,18 @@
     $(function() {
 
       $('.sidenav').sidenav();
+
+    }); // end of document ready
+  })(jQuery); // end of jQuery name space
+</script>
+<script type="text/javascript">
+  var elem = document.querySelector('.collapsible');
+  var instance = new M.Collapsible(elem);
+
+  (function($) {
+    $(function() {
+
+      $('.collapsible').collapsible();
 
     }); // end of document ready
   })(jQuery); // end of jQuery name space

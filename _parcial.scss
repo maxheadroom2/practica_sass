@@ -20,7 +20,7 @@ justify-content     : center;
 }
 
 // animacion de cambios en responsive, el cual hace que todo sea lento
-* :not(.sidenav){
+* :not(.sidenav .collapsible){
     -webkit-transition:all .5s ease;
          -moz-transition:all .5s ease;
                -o-transition:all .5s ease;
