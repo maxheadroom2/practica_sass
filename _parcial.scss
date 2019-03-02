@@ -19,11 +19,11 @@ justify-content     : space-around;
 justify-content     : center;
 }
 
-// animacion de cambios en responsive
-*{
-    -webkit-transition:all 1s ease;
-         -moz-transition:all 1s ease;
-               -o-transition:all 1s ease;
-                     transition:all 1s ease;
-                     -ms-transition:all 1s ease;
+// animacion de cambios en responsive, el cual hace que todo sea lento
+* :not(.sidenav){
+    -webkit-transition:all .5s ease;
+         -moz-transition:all .5s ease;
+               -o-transition:all .5s ease;
+                     transition:all .5s ease;
+                     -ms-transition:all .5s ease;
 }

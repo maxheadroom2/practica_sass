@@ -7,12 +7,12 @@
   height                : 100vh;
   margin                : 5px;
   padding               : 0;
-  grid-column-gap       : 0px;
-  grid-row-gap          : 0px;
-  grid-template-columns : 2.5% 20% auto 40% 2.5%;
-  grid-template-rows    : 10% auto auto auto;
+  grid-column-gap       : 3px;
+  grid-row-gap          : 0;
+  grid-template-columns : 2.5% auto auto auto 2.5%;
+  grid-template-rows    : 10%  auto auto auto;
   grid-template-areas   : "x1 head head head x2"
-                          "x1 nav1 nav2 nav3 x2"
+                          "x1 nav2 nav2 nav3 x2"
                           "x1 main main nav4 x2"
                           "x1 foot foot foot x2";
 }
@@ -25,10 +25,6 @@
   // background-color : #393433;
 }
 
-#page > .article1 {
-  overflow  : auto;
-  grid-area : nav1;
-}
 
 #page > .article2 {
   @include           flex_general;
@@ -39,7 +35,6 @@
 
 #page > .article3 {
   @include           flex_general;
-  background-color : #c85037;
   flex-direction   : column;
   grid-area        : nav3;
 }
