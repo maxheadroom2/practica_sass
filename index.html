@@ -8,25 +8,12 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="base.css">
-  <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" media="all" href="base.css"/>
-  <![endif]-->
-  <!-- inicializacion de los collapsibles -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.collapsible').collapsible({
-        accordion: false
-      });
-    });
-  </script>
 </head>
+
 
 <body>
 
@@ -36,16 +23,25 @@
 
     <header>
       <nav>
-        <div class="nav-wrapper blue-grey darken-4">
-          <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
-          <ul class="right hide-on-small-only">
-            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-            <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+        <div class="nav-wrapper green-accent 3">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
           </ul>
         </div>
       </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+
     </header>
 
     <div class="collection article1">
@@ -133,7 +129,7 @@
       </ul>
     </div>
 
-    <footer class="page-footer blue-grey darken-4">
+    <footer class="page-footer green accent-3">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -154,5 +150,19 @@
     </footer>
   </section>
 </body>
+<!-- seccion de scripts  -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+  var elem = document.querySelector('.sidenav');
+  var instance = new M.Sidenav(elem);
+
+  (function($) {
+    $(function() {
+
+      $('.sidenav').sidenav();
+
+    }); // end of document ready
+  })(jQuery); // end of jQuery name space
+</script>
 
 </html>
