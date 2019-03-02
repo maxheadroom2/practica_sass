@@ -1,18 +1,22 @@
 .collection a.collection-item {
-  color: #1a1a1a !important; }
+  color: #1a1a1a !important;
+}
 
 .collapsible.popout > li {
-  margin: 0; }
+  margin: 0;
+}
 
 a.brand-logo {
-  padding-left: 10px; }
+  padding-left: 10px;
+}
 
 * :not(.sidenav .collapsible) {
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-  -ms-transition: all .5s ease; }
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
 
 #page {
   display: grid;
@@ -23,15 +27,17 @@ a.brand-logo {
   grid-column-gap: 3px;
   grid-row-gap: 0;
   grid-template-columns: 2.5% auto auto auto 2.5%;
-  grid-template-rows: 10%  auto auto auto;
-  grid-template-areas: "x1 head head head x2" "x1 nav2 nav2 nav3 x2" "x1 main main nav4 x2" "x1 foot foot foot x2"; }
+  grid-template-rows: 10% auto auto auto;
+  grid-template-areas: "x1 head head head x2" "x1 main nav2 nav3 x2" "x1 main nav4 nav4 x2" "x1 foot foot foot x2";
+}
 
 #page > header {
   display: flex;
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  grid-area: head; }
+  grid-area: head;
+}
 
 #page > .article2 {
   display: flex;
@@ -40,7 +46,8 @@ a.brand-logo {
   justify-content: center;
   background-color: #fafafa;
   flex-direction: column;
-  grid-area: nav2; }
+  grid-area: nav2;
+}
 
 #page > .article3 {
   display: flex;
@@ -48,7 +55,8 @@ a.brand-logo {
   justify-content: space-around;
   justify-content: center;
   flex-direction: column;
-  grid-area: nav3; }
+  grid-area: nav3;
+}
 
 #page > .article4 {
   display: flex;
@@ -57,41 +65,51 @@ a.brand-logo {
   justify-content: center;
   background-color: #834b40;
   flex-direction: column;
-  grid-area: nav4; }
+  grid-area: nav4;
+}
 
 #page > .main {
   overflow: auto;
-  grid-area: main; }
+  grid-area: main;
+  max-width: 650px;
+}
 
 #page > footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  grid-area: foot; }
+  grid-area: foot;
+}
 
 #page > .x1 {
-  grid-area: x1; }
+  grid-area: x1;
+}
 
 #page > .x2 {
-  grid-area: x2; }
+  grid-area: x2;
+}
 
 @media only screen and (max-width: 600px) {
   .collection a.collection-item {
-    color: #1a1a1a !important; }
+    color: #1a1a1a !important;
+  }
 
   .collapsible.popout > li {
-    margin: 0; }
+    margin: 0;
+  }
 
   a.brand-logo {
-    padding-left: 10px; }
+    padding-left: 10px;
+  }
 
   * :not(.sidenav .collapsible) {
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-    -ms-transition: all .5s ease; }
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+  }
 
   #page {
     display: grid;
@@ -104,19 +122,22 @@ a.brand-logo {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto 30% auto;
     grid-template-areas: "head" "nav1" "nav2" "nav3" "nav4" "main" "foot";
-    transition-duration: .5s; }
+    transition-duration: 0.5s;
+  }
 
   #page > header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: head; }
+    grid-area: head;
+  }
 
   #page > .article1 {
     min-height: 160px;
     overflow: auto;
-    grid-area: nav1; }
+    grid-area: nav1;
+  }
 
   #page > .article2 {
     display: flex;
@@ -125,7 +146,8 @@ a.brand-logo {
     justify-content: center;
     background-color: #fafafa;
     flex-direction: column;
-    grid-area: nav2; }
+    grid-area: nav2;
+  }
 
   #page > .article3 {
     display: flex;
@@ -134,24 +156,29 @@ a.brand-logo {
     justify-content: center;
     background-color: #c85037;
     flex-direction: column;
-    grid-area: nav3; }
+    grid-area: nav3;
+  }
 
   #page > .article4 {
     display: flex;
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: nav4; }
+    grid-area: nav4;
+  }
 
   #page > .main {
     overflow: auto;
-    grid-area: main; }
+    grid-area: main;
+  }
 
   #page > footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: foot; } }
+    grid-area: foot;
+  }
+}
 
 /*# sourceMappingURL=base.css.map */

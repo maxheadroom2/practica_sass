@@ -12,8 +12,8 @@
   grid-template-columns : 2.5% auto auto auto 2.5%;
   grid-template-rows    : 10%  auto auto auto;
   grid-template-areas   : "x1 head head head x2"
-                          "x1 nav2 nav2 nav3 x2"
-                          "x1 main main nav4 x2"
+                          "x1 main nav2 nav3 x2"
+                          "x1 main nav4 nav4 x2"
                           "x1 foot foot foot x2";
 }
 
@@ -49,6 +49,7 @@
 #page > .main {
   overflow  : auto;
   grid-area : main;
+  max-width: 650px;
 }
 
 #page > footer {
