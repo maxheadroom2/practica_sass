@@ -1,136 +1,125 @@
 @import "parcial";
 
-
 #page {
-  display               : grid;
-  width                 : 100vw;
-  height                : 100vh;
-  margin                : 5px;
-  padding               : 0;
-  grid-column-gap       : 3px;
-  grid-row-gap          : 0;
-  grid-template-columns : 2.5% auto auto auto 2.5%;
-  grid-template-rows    : 10%  auto auto auto;
-  grid-template-areas   : "x1 head head head x2"
-                          "x1 nav2 nav2 nav3 x2"
-                          "x1 main main nav4 x2"
-                          "x1 foot foot foot x2";
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  margin: 5px;
+  padding: 0;
+  grid-column-gap: 3px;
+  grid-row-gap: 0;
+  grid-template-columns: 2.5% auto auto auto 2.5%;
+  grid-template-rows: 10% auto auto auto;
+  grid-template-areas: "x1 head head head x2" "x1 nav2 nav2 nav3 x2" "x1 main main nav4 x2" "x1 foot foot foot x2";
 }
-
 // Variables generales
-
 #page > header {
-  @include    flex_general;
-  grid-area : head;
+  @include flex_general;
+  grid-area: head;
   // background-color : #393433;
 }
 
-
 #page > .article2 {
-  @include           flex_general;
-  background-color : #fafafa;
-  flex-direction   : column;
-  grid-area        : nav2;
+  @include flex_general;
+  background-color: #fafafa;
+  flex-direction: column;
+  grid-area: nav2;
 }
 
 #page > .article3 {
-  @include           flex_general;
-  flex-direction   : column;
-  grid-area        : nav3;
+  @include flex_general;
+  flex-direction: column;
+  grid-area: nav3;
 }
 
 #page > .article4 {
-  @include           flex_general;
-  background-color : #834b40;
-  flex-direction   : column;
-  grid-area        : nav4;
+  @include flex_general;
+  background-color: #834b40;
+  flex-direction: column;
+  grid-area: nav4;
 }
 
 #page > .main {
-  overflow  : auto;
-  grid-area : main;
+  overflow: auto;
+  grid-area: main;
 }
 
 #page > footer {
-  @include    flex_general;
-  grid-area : foot;
+  @include flex_general;
+  grid-area: foot;
 }
 
 #page > .x1 {
-  grid-area : x1;
+  grid-area: x1;
 }
 
 #page > .x2 {
-  grid-area : x2;
+  grid-area: x2;
 }
-
 // usando el import de otro documento _parcial.scss
-
-@media
-  only screen
-  and (max-width : 600px) {
+@media only screen and (max-width : 600px) {
   @import "parcial";
 
   #page {
-    display               : grid;
-    width                 : 100vw;
-    height                : 100vh;
-    margin                : 5px;
-    padding               : 0;
-    grid-column-gap       : 0px;
-    grid-row-gap          : 0px;
-    grid-template-columns : auto;
-    grid-template-rows    : auto auto auto auto auto 30% auto;
-    grid-template-areas   : "head"
-                            "nav1"
-                            "nav2"
-                            "nav3"
-                            "nav4"
-                            "main"
-                            "foot";
-    transition-duration   : .5s;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    margin: 5px;
+    padding: 0;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto 30% auto;
+    grid-template-areas: "head" "nav1" "nav2" "nav3" "nav4" "main" "foot";
+    transition-duration: 0.5s;
   }
   // Variables generales
-
   #page > header {
-    @include    flex_general;
-    grid-area : head;
+    @include flex_general;
+    grid-area: head;
     // background-color : #393433;
   }
 
   #page > .article1 {
-    min-height : 160px;
-    overflow   : auto;
-    grid-area  : nav1;
+    min-height: 160px;
+    overflow: auto;
+    grid-area: nav1;
   }
 
   #page > .article2 {
-    @include           flex_general;
-    background-color : #fafafa;
-    flex-direction   : column;
-    grid-area        : nav2;
+
+    background-color: #fafafa;
+    flex-direction: column;
+    grid-area: nav2;
   }
 
   #page > .article3 {
-    @include           flex_general;
-    background-color : #c85037;
-    flex-direction   : column;
-    grid-area        : nav3;
+
+    background-color: #c85037;
+    flex-direction: column;
+    grid-area: nav3;
   }
 
   #page > .article4 {
-    @include    flex_general;
-    grid-area : nav4;
+
+    grid-area: nav4;
   }
 
   #page > .main {
-    overflow  : auto;
-    grid-area : main;
+    overflow: auto;
+    grid-area: main;
   }
 
   #page > footer {
-    @include    flex_general;
-    grid-area : foot;
+    @include flex_general;
+    grid-area: foot;
+  }
+  // Uso de ciclo while
+
+  @for $i from 2 through 4 {
+    .article#{$i} {
+      @include flex_general;
+    }
   }
   // usando el import de otro documento _parcial.scss
 }

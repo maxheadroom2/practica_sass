@@ -23,7 +23,7 @@ a.brand-logo {
   grid-column-gap: 3px;
   grid-row-gap: 0;
   grid-template-columns: 2.5% auto auto auto 2.5%;
-  grid-template-rows: 10%  auto auto auto;
+  grid-template-rows: 10% auto auto auto;
   grid-template-areas: "x1 head head head x2" "x1 nav2 nav2 nav3 x2" "x1 main main nav4 x2" "x1 foot foot foot x2"; }
 
 #page > header {
@@ -99,12 +99,12 @@ a.brand-logo {
     height: 100vh;
     margin: 5px;
     padding: 0;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto 30% auto;
     grid-template-areas: "head" "nav1" "nav2" "nav3" "nav4" "main" "foot";
-    transition-duration: .5s; }
+    transition-duration: 0.5s; }
 
   #page > header {
     display: flex;
@@ -119,28 +119,16 @@ a.brand-logo {
     grid-area: nav1; }
 
   #page > .article2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    justify-content: center;
     background-color: #fafafa;
     flex-direction: column;
     grid-area: nav2; }
 
   #page > .article3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    justify-content: center;
     background-color: #c85037;
     flex-direction: column;
     grid-area: nav3; }
 
   #page > .article4 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    justify-content: center;
     grid-area: nav4; }
 
   #page > .main {
@@ -152,6 +140,24 @@ a.brand-logo {
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: foot; } }
+    grid-area: foot; }
+
+  .article2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center; }
+
+  .article3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center; }
+
+  .article4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center; } }
 
 /*# sourceMappingURL=base.css.map */
