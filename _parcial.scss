@@ -11,19 +11,24 @@
 a.brand-logo {
   padding-left: 10px;
 }
-
 @mixin flex_general {
-display             : flex;
-align-items         : center;
-justify-content     : space-around;
-justify-content     : center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
+}
+// animacion de cambios en responsive, el cual hace que todo sea lento
+
+* :not(.sidenav .collapsible) {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
 }
 
-// animacion de cambios en responsive, el cual hace que todo sea lento
-* :not(.sidenav .collapsible){
-    -webkit-transition:all .5s ease;
-         -moz-transition:all .5s ease;
-               -o-transition:all .5s ease;
-                     transition:all .5s ease;
-                     -ms-transition:all .5s ease;
+.logoEquipo {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
 }
