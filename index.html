@@ -61,47 +61,155 @@
       </div>
     </div>
 
-
-
-    <div class="main card grey lighten-5 row">
-      <ul class="collapsible popout col s6">
-        <li>
-          <div class="collapsible-header">
-            <img class="logoEquipo" src="iconos\personalizados\Logos_terminados\america.svg" alt="">
-            Equipo
-            <!-- boton --> aqui</div>
-          <div class="collapsible-body">
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </li>
-
-      </ul>
-      <ul class="collapsible col s6">
-        <li>
-          <div class="collapsible-header">
-            <img class="logoEquipo" src="iconos\personalizados\Logos_terminados\america.svg" alt="">
-            Equipo
-            <!-- boton --> aqui</div>
-          <div class="collapsible-body">
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </li>
-
-      </ul>
-
-      </ul>
+    <div class="article4 card grey lighten-5">
+      <div class="card-content darken-4-text">
+        <span class="card-title">Titulo</span>
+        <p>parrafo</p>
+      </div>
+      <div class="card-action">
+        <a href="#" class="blue-text">Enlances</a>
+      </div>
     </div>
 
-
+    <!-- seccion de quinela -->
+    <div class="main card grey lighten-5 row">
+      <div class="col s12">
+        <div class="card light-green lighten-3">
+          <div class="card-content black-text">
+            <span class="card-title center-align">Llenado de quinela</span>
+          </div>
+        </div>
+        <!-- equipo de visita -->
+        <ul class="collapsible col s6">
+          <p class="center-align">visita</p>
+          <li>
+            <div class="collapsible-header">
+              <img class="logoEquipo" src="iconos\personalizados\Logos_terminados\america.svg" alt="">
+              America
+            </div>
+            <div class="collapsible-body">
+              <form action="#">
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Gana</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Empata</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Pierde</span>
+                  </label>
+                </p>
+              </form>
+              <p>Estadistica del equipo</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <img class="logoEquipo" src="iconos\personalizados\Logos_terminados\america.svg" alt="">
+              America
+            </div>
+            <div class="collapsible-body">
+              <form action="#">
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Gana</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Empata</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Pierde</span>
+                  </label>
+                </p>
+              </form>
+              <p>Estadistica del equipo</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <img class="logoEquipo" src="iconos\personalizados\Logos_terminados\america.svg" alt="">
+              America
+            </div>
+            <div class="collapsible-body">
+              <form action="#">
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Gana</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Empata</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Pierde</span>
+                  </label>
+                </p>
+              </form>
+              <p>Estadistica del equipo</p>
+            </div>
+          </li>
+        </ul>
+        <!-- equipo de local -->
+        <ul class="collapsible col s6">
+          <p class="center-align">Local</p>
+          <li>
+            <div class="collapsible-header">
+              <img class="logoEquipo" src="iconos\personalizados\Logos_terminados\guadalajara.svg" alt="">
+              Guadalajara
+              <!-- boton -->
+            </div>
+            <div class="collapsible-body">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <img class="logoEquipo" src="iconos\personalizados\Logos_terminados\guadalajara.svg" alt="">
+              Guadalajara
+              <!-- boton -->
+            </div>
+            <div class="collapsible-body">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <img class="logoEquipo" src="iconos\personalizados\Logos_terminados\guadalajara.svg" alt="">
+              Guadalajara
+              <!-- boton -->
+            </div>
+            <div class="collapsible-body">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- fin de seccion de quinela -->
 
     <div class="x1"></div>
     <div class="x2"></div>
-
-
-
-
-
-
 
     <footer class="page-footer  green darken-3">
       <div class="container">
@@ -139,7 +247,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems, {
-      accordion: false
+      accordion: true
     });
   });
 </script>
