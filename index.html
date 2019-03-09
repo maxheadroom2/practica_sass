@@ -33,7 +33,46 @@
       </nav>
       <!-- barra movil derecha -->
       <ul id="nav-movil" class="sidenav sidenav-fixed">
-        <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>
+        <div class="navSeparador">
+          <div class="chip">
+            <img src="images/user.jpg" alt="">
+            Nombre de usuario XXXX
+          </div>
+        </div>
+        <li class="no-padding">
+          <ul class="collapsible">
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal" tabindex="0">Datos de Usuario</a>
+              <div class="collapsible-body">
+                <ul>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="flow-text">Victor Ruben Farias Rolon</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Usuario Quinelazo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="flow-text">vrfr456</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
         <li class="bold"><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>
         <li class="no-padding">
           <ul class="collapsible">
@@ -255,26 +294,7 @@
   </section>
 </body>
 <!-- seccion de scripts  -->
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-<script type="text/javascript">
-  var elem = document.querySelector('.sidenav');
-  var instance = new M.Sidenav(elem);
-
-  (function($) {
-    $(function() {
-
-      $('.sidenav').sidenav();
-
-    }); // end of document ready
-  })(jQuery); // end of jQuery name space
 </script>
-<script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, {
-      accordion: true
-    });
-  });
-</script>
+<script src="js/init_materializecss.js" charset="utf-8"></script>
 
 </html>

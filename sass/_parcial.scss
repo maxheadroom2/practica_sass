@@ -31,5 +31,13 @@ a.brand-logo {
   height: 25px;
   width: 25px;
   margin-right: 20px;
+}
 
+div.navSeparador {
+  display: flex;
+  width: auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
 }
