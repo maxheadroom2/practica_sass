@@ -1,28 +1,23 @@
 .collection a.collection-item {
-  color: #1a1a1a !important;
-}
+  color: #1a1a1a !important; }
 
 .collapsible.popout > li {
-  margin: 0;
-}
+  margin: 0; }
 
 a.brand-logo {
-  padding-left: 10px;
-}
+  padding-left: 10px; }
 
 * :not(.sidenav .collapsible) {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-}
+  -ms-transition: all 0.5s ease; }
 
 .logoEquipo {
   height: 25px;
   width: 25px;
-  margin-right: 20px;
-}
+  margin-right: 20px; }
 
 div.navSeparador {
   display: flex;
@@ -30,8 +25,7 @@ div.navSeparador {
   height: 70px;
   align-items: center;
   justify-content: space-around;
-  justify-content: center;
-}
+  justify-content: center; }
 
 #page {
   display: grid;
@@ -41,27 +35,23 @@ div.navSeparador {
   padding: 0;
   grid-column-gap: 3px;
   grid-row-gap: 0;
-  grid-template-columns: 300px auto auto auto 0.5%;
-  grid-template-rows: 10% auto auto auto;
-  grid-template-areas: "x1 head head head x2" "x1 main nav2 nav3 x2" "x1 main nav4 nav4 x2" "x1 foot foot foot x2";
-}
+  grid-template-columns: 300px auto auto auto .5%;
+  grid-template-rows: 10%  auto auto auto;
+  grid-template-areas: "x1 head head head x2" "x1 main nav2 nav3 x2" "x1 main nav4 nav4 x2" "x1 foot foot foot x2"; }
 
 #page > header {
   display: flex;
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  grid-area: head;
-}
+  grid-area: head; }
 
 nav .brand-logo {
-  position: relative;
-}
+  position: relative; }
 
 div .quinela {
   background-color: #DFDBE5;
-  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2340a73e' fill-opacity='0.61' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-}
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2340a73e' fill-opacity='0.61' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
 
 #page > .article2 {
   display: flex;
@@ -70,8 +60,7 @@ div .quinela {
   justify-content: center;
   background-color: #fafafa;
   flex-direction: column;
-  grid-area: nav2;
-}
+  grid-area: nav2; }
 
 #page > .article3 {
   display: flex;
@@ -79,8 +68,7 @@ div .quinela {
   justify-content: space-around;
   justify-content: center;
   flex-direction: column;
-  grid-area: nav3;
-}
+  grid-area: nav3; }
 
 #page > .article4 {
   display: flex;
@@ -89,57 +77,47 @@ div .quinela {
   justify-content: center;
   background-color: #834b40;
   flex-direction: column;
-  grid-area: nav4;
-}
+  grid-area: nav4; }
 
 #page > .main {
   overflow: auto;
-  grid-area: main;
-}
+  grid-area: main; }
 
 #page > footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
   justify-content: center;
-  grid-area: foot;
-}
+  grid-area: foot; }
 
 #page > .x1 {
   margin-left: 20px;
-  grid-area: x1;
-}
+  grid-area: x1; }
 
 #page > .x2 {
-  grid-area: x2;
-}
+  grid-area: x2; }
 
 @media only screen and (max-width: 992px) {
   .collection a.collection-item {
-    color: #1a1a1a !important;
-  }
+    color: #1a1a1a !important; }
 
   .collapsible.popout > li {
-    margin: 0;
-  }
+    margin: 0; }
 
   a.brand-logo {
-    padding-left: 10px;
-  }
+    padding-left: 10px; }
 
   * :not(.sidenav .collapsible) {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-  }
+    -ms-transition: all 0.5s ease; }
 
   .logoEquipo {
     height: 25px;
     width: 25px;
-    margin-right: 20px;
-  }
+    margin-right: 20px; }
 
   div.navSeparador {
     display: flex;
@@ -147,8 +125,7 @@ div .quinela {
     height: 70px;
     align-items: center;
     justify-content: space-around;
-    justify-content: center;
-  }
+    justify-content: center; }
 
   #page {
     display: grid;
@@ -161,26 +138,22 @@ div .quinela {
     grid-template-columns: auto;
     grid-template-rows: auto 50% auto auto auto auto 0px 0px auto;
     grid-template-areas: "head" "main" "nav1" "nav2" "nav3" "nav4" "x1" "x2" "foot";
-    transition-duration: 0.5s;
-  }
+    transition-duration: .5s; }
 
   #page > header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: head;
-  }
+    grid-area: head; }
 
   nav .brand-logo {
-    position: absolute;
-  }
+    position: absolute; }
 
   #page > .article1 {
     min-height: 160px;
     overflow: auto;
-    grid-area: nav1;
-  }
+    grid-area: nav1; }
 
   #page > .article2 {
     display: flex;
@@ -189,8 +162,7 @@ div .quinela {
     justify-content: center;
     background-color: #fafafa;
     flex-direction: column;
-    grid-area: nav2;
-  }
+    grid-area: nav2; }
 
   #page > .article3 {
     display: flex;
@@ -199,8 +171,7 @@ div .quinela {
     justify-content: center;
     background-color: #c85037;
     flex-direction: column;
-    grid-area: nav3;
-  }
+    grid-area: nav3; }
 
   #page > .article4 {
     display: flex;
@@ -208,31 +179,25 @@ div .quinela {
     justify-content: space-around;
     justify-content: center;
     flex-direction: column;
-    grid-area: nav4;
-  }
+    grid-area: nav4; }
 
   #page > .main {
     overflow: auto;
     min-width: 100px;
-    grid-area: main;
-  }
+    grid-area: main; }
 
   #page > footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
     justify-content: center;
-    grid-area: foot;
-  }
+    grid-area: foot; }
 
   #page > .x1 {
     background-color: #d1cdc8;
-    grid-area: x1;
-  }
+    grid-area: x1; }
 
   #page > .x2 {
-    grid-area: x2;
-  }
-}
+    grid-area: x2; } }
 
 /*# sourceMappingURL=base.css.map */
