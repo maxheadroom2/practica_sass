@@ -1,0 +1,36 @@
+// _parcial.scss
+
+.collection a.collection-item {
+  color: #1a1a1a !important;
+}
+
+.collapsible.popout > li {
+  margin: 0;
+}
+
+
+@mixin flex_general {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
+}
+// animacion de cambios en responsive, el cual hace que todo sea lento
+
+* :not(.sidenav .collapsible) {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+
+div.navSeparador {
+  display: flex;
+  width: auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
+}
